@@ -1,0 +1,73 @@
+.background{
+    background: linear-gradient(to bottom, #cc0066 0%, #660033 100%);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    margin-top: -1.5%;
+    
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 1%;
+
+}
+
+.button{
+    display: inline-block;
+    position: relative;
+    padding: 5px 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: black;
+    background: linear-gradient(to bottom, #cc0066 0%, #660033 100%);
+    color: white;
+    border: 5px;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 5px;
+    margin-bottom: 1%;
+    font-family: "Kotta One", serif;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:#cc0066 0%, #660033 100%;
+}
+
+.button:active {
+    background-color: #cc0066 0%, #660033 100%;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button:after {
+    content: "";
+    background: #cc0066 0%, #660033 100%;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
